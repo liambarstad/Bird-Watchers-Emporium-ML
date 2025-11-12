@@ -1,0 +1,25 @@
+// Order
+CREATE CONSTRAINT order_name IF NOT EXISTS
+FOR (o:Order) REQUIRE o.name IS UNIQUE;
+
+// Family
+CREATE CONSTRAINT family_name IF NOT EXISTS
+FOR (fa:Family) REQUIRE fa.name IS UNIQUE;
+
+// Genus
+CREATE CONSTRAINT genus_name IF NOT EXISTS
+FOR (g:Genus) REQUIRE g.name IS UNIQUE;
+
+// Bird
+CREATE CONSTRAINT bird_id IF NOT EXISTS
+FOR (b:Bird) REQUIRE b.id IS UNIQUE;
+CREATE CONSTRAINT bird_name IF NOT EXISTS
+FOR (b:Bird) REQUIRE b.name IS UNIQUE;
+
+// Fact
+CREATE CONSTRAINT fact_id IF NOT EXISTS
+FOR (f:Fact) REQUIRE f.id IS UNIQUE;
+
+// Image
+CREATE CONSTRAINT image_id IF NOT EXISTS
+FOR (i:Image) REQUIRE i.id IS UNIQUE;

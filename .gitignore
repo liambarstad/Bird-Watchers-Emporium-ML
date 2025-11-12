@@ -2,3 +2,4 @@
 .env
 
 eval/data
+eval/data_collection/run_logs
