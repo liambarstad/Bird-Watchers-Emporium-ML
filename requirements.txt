@@ -6,6 +6,8 @@ ipywidgets==8.1.7
 # reasoning pkgs
 langchain==0.3.27
 langgraph==0.6.10
+langchain-community==0.3.30
+langchain-neo4j==0.6.0
 
 # data collection/storage
 datasets==3.3.2
@@ -13,12 +15,17 @@ selenium==4.24.0
 webdriver-manager==4.0.2
 neo4j==5.28.1
 
+# evaluation/generation
+openai==2.7.2
+nltk==3.9.2
+spacy==3.8.2
+
 # models
 pytorch==2.5.1
 torchvision==0.20.1
 transformers==4.57.1
 #einops=0.8.1
-#flash_attn==2.8.3
+flash_attn==2.8.3
 accelerate==1.11.0
 #peft==0.17.1
 git+https://github.com/illuin-tech/colpali.git

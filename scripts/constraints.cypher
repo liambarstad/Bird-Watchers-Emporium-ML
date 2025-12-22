@@ -17,8 +17,9 @@ CREATE CONSTRAINT bird_name IF NOT EXISTS
 FOR (b:Bird) REQUIRE b.name IS UNIQUE;
 
 // Fact
-CREATE CONSTRAINT fact_id IF NOT EXISTS
-FOR (f:Fact) REQUIRE f.id IS UNIQUE;
+CREATE CONSTRAINT fact_unique_bird_title IF NOT EXISTS
+FOR (f:Fact)
+REQUIRE (f.bird_name, f.title) IS UNIQUE;
 
 // Image
 CREATE CONSTRAINT image_id IF NOT EXISTS
