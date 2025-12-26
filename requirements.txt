@@ -8,6 +8,9 @@ langchain==0.3.27
 langgraph==0.6.10
 langchain-community==0.3.30
 langchain-neo4j==0.6.0
+langchain-ollama==0.3.10
+ollama-python==0.6.0
+instructor==1.13.0
 
 # data collection/storage
 datasets==3.3.2
