@@ -20,10 +20,10 @@ cypher-shell \
     -d "$NEO4J_DATABASE" \
     -f "./constraints.cypher"
 
-echo "Adding vector indexes..."
+echo "Adding indexes..."
 cypher-shell \
     -a "$NEO4J_URI" \
     -u "$NEO4J_USER" \
     -p "$NEO4J_PWD" \
     -d "$NEO4J_DATABASE" \
-    -f "./vector-indexes.cypher"
+    -f "./indexes.cypher"
