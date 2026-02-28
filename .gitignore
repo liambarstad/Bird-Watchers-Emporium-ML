@@ -1,5 +1,6 @@
 .history
 .env
+__pycache__/
 
 eval/data
 eval/data_collection/run_logs
